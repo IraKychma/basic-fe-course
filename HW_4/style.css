@@ -1,0 +1,362 @@
+body {
+    margin: 0px;
+}
+
+
+h1 {
+    width: 445px;
+    height: 91px;
+    margin: 0px;
+    font-size: 36px;
+    line-height: 43px;
+    color: #FFFFFF;
+    font-family: 'Lato', sans-serif;
+}
+
+
+p {
+    width: 445px;
+    height: 64px;
+    margin: 0px;
+    font-size: 14px;
+    line-height: 140%;
+    text-align: justify;
+    color: #FFFFFF;
+    font-family: 'Lato', sans-serif;
+}
+
+
+.Icons {
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    gap: 23px;
+
+}
+
+
+.Left_side {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 40px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+}
+
+
+.Download_Section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #ED4C5C;
+    gap: 83px;
+    padding: 94px 215px 95px 164px;
+}
+
+
+.Left_side1 h1 {
+    width: 445px;
+    height: 43px;
+    font-size: 36px;
+    line-height: 43px;
+    color: black;
+    font-family: 'Lato', sans-serif;
+}
+
+
+.Left_side1 p {
+    width: 434px;
+    height: 48px;
+    font-size: 14px;
+    line-height: 140%;
+    text-align: justify;
+    color: #000000;
+    font-family: 'Lato', sans-serif;
+}
+
+
+.Left_side1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 53px;
+}
+
+
+.FirsName {
+    display: flex;
+    width: 238px;
+    height: 60px;
+    border: 1px solid #333333;
+    border-radius: 6px;
+    padding-left: 31px;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    margin: 0px;
+    color: rgba(19, 39, 67, 0.5);
+}
+
+
+.LastName {
+    display: flex;
+    width: 238px;
+    height: 60px;
+    border: 1px solid #333333;
+    border-radius: 6px;
+    padding-left: 31px;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    margin: 0px;
+    color: rgba(19, 39, 67, 0.5);
+}
+
+
+.Form1 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    position: relative;
+    gap: 30px
+    
+}
+
+
+.PhoneNumber {
+    display: flex;
+    width: 541px;
+    height: 60px;
+    border: 1px solid #333333;
+    border-radius: 6px;
+    padding-left: 31px;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    color: rgba(19, 39, 67, 0.5);
+}
+
+
+.Select_Service  {
+    display: flex;
+    width: 576px;
+    height: 60px;
+    border: 1px solid #333333;
+    border-radius: 6px;
+    padding-left: 31px;
+    padding-right: 31px;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    color: rgba(19, 39, 67, 0.5);
+}
+
+
+button {
+    box-sizing: border-box;
+    width: 160px;
+    height: 50px;
+    background: #ED4C5C;
+    border: 1.5px solid #ED4C5C;
+    border-radius: 6px;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    font-family: 'Lato', sans-serif;
+}
+
+
+
+.Right_side {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 26px;
+}
+
+
+.Contact_Us {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0px;
+    gap: 114px;
+    margin-top: 117px;
+    margin-bottom: 45px;
+    padding-bottom: 78px;
+}
+
+
+.Address {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 33px;
+    height: 109px;;
+    margin-top: 85px;
+}
+
+
+.Address h1 {
+    width: 65px;
+    height: 22px;
+    font-family: 'Lato';
+    font-size: 18px;
+    line-height: 22px;
+    color: #101010;
+}
+
+
+.Address p {
+    height: 54px;
+    font-family: 'Lato';
+    font-size: 12px;
+    line-height: 150%;
+    color: #101010;
+}
+
+
+.Address_section p {
+    width: 155px;
+    height: 14px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #101010;
+}
+
+
+.Address_section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 141px;
+}
+
+
+.Services h1 {
+    width: 65px;
+    height: 22px;
+    font-family: 'Lato';
+    font-size: 18px;
+    line-height: 22px;
+    color: #101010;
+}
+
+
+ .list {
+    list-style: none;
+    font-family: 'Lato';
+    font-size: 12px;
+    line-height: 160%;
+    color: #000000;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+.Services {
+    margin-top: 85px;
+    gap: 28px;
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+}
+
+
+.Social_networks {
+    flex-direction: row;
+}
+
+
+.Social_networks img {
+    color: rgba(16, 16, 16, 1);
+}
+
+
+.Get_in_Touch h1 {
+    width: 100px;
+    height: 22px;
+    font-family: 'Lato';
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #101010;
+}
+
+
+.Get_in_Touch p {
+    height: 14px;
+    font-family: 'Lato';
+    font-size: 12px;
+    line-height: 14px;
+    color: #101010;
+}
+
+
+.address {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 11px;
+    width: 121px;
+    height: 39px;
+}
+
+
+.address_social {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 20px;
+}
+
+
+.Get_in_Touch {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    gap: 33px;
+    margin-top: 85px;
+}
+
+
+.We_Support h1 {
+    width: 97px;
+    height: 22px;
+    left: 0px;
+    top: 0px;
+    font-family: 'Lato';
+    font-size: 18px;
+    line-height: 22px;
+    color: #101010;
+}
+
+
+.We_Support {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 85px;
+    padding: 0px;
+    gap: 33px;
+}
+
+
+.Footer {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0px;
+    gap: 153px;
+    background-color: #FAFAFA;
+}
