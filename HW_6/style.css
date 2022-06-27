@@ -57,12 +57,12 @@ nav ul {
     align-items: flex-start;
     padding: 0px;
     gap: 50px;
-    
     position: absolute;
     width: 645px;
     height: 464px;
     left: 336px;
     top: 240px;
+    z-index: 1;
 }
 
 
@@ -115,16 +115,19 @@ h1 {
    gap: 0px;
    height: 700px;
    margin-bottom: 100px;
+  
 }
 
 
 .hero_image {
    position: absolute;
-   margin-left: 239px;
+   margin-left: 20%;
    margin-top: 110px;
    background-image: url("./Icons/image1.png");
    width: 885px;
    height: 468px;
+   z-index: 0;
+  
 }
 
     
@@ -165,6 +168,7 @@ h1 {
     gap: 40px;
     margin: 0px;
     box-sizing: content-box;
+
 }
 
 
