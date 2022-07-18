@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>HW11</title>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<body>
+    
+<header class="header">
+    <div class="navbar navbar-white bg-white">
+        <div class="container d-flex justify-content-between">
+
+<div class="logo">
+    <img class="logo" src="./Icons/logo.png" alt="logo">
+</div>
+
+<div class="search">
+    <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+      </form>
+</div>
+
+<div class="icons">
+    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="22" viewBox="0 0 23 22" fill="none">
+        <path d="M22.1768 22H14.5175C14.1171 22 13.7666 21.6795 13.7666 21.3132V15.6816C13.7666 14.4912 12.7654 13.5754 11.4638 13.5754C10.1623 13.5754 9.16106 14.4912 9.16106 15.6816V21.3132C9.16106 21.6795 8.81064 22 8.41016 22H0.750907C0.350423 22 0 21.6795 0 21.3132V10.5536C0 10.3704 0.100121 10.1873 0.200242 10.0499L10.9632 0.206035C11.2636 -0.0686785 11.7141 -0.0686785 12.0145 0.206035L22.7775 10.0499C22.9778 10.2331 23.0779 10.5536 22.9277 10.7825C22.9277 10.8283 22.8776 10.8283 22.8776 10.8741V21.3132C22.9277 21.6795 22.5773 22 22.1768 22ZM15.2684 20.6264H21.4259V10.7367L11.5139 1.67118L1.50181 10.8283V20.6264H7.65925V15.6816C7.65925 13.7128 9.31125 12.2019 11.4638 12.2019C13.6164 12.2019 15.2684 13.7128 15.2684 15.6816V20.6264Z" fill="#262626"/>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="27" viewBox="0 0 30 27" fill="none">
+            <path d="M21.5131 8H0.460947C0.0399037 8 -0.147226 8.50902 0.133469 8.78667L7.61868 16.098L10.1917 26.6486C10.2853 27.0651 10.8467 27.1113 11.0338 26.7874L21.9341 8.69412C22.1213 8.3702 21.8874 8 21.5131 8ZM2.75329 9.38823H18.4254L8.69468 14.7098C8.50755 14.8023 8.27363 14.7561 8.13329 14.6172L2.75329 9.38823ZM11.0338 24.1035L9.1625 16.422C9.11572 16.2369 9.20928 16.0055 9.39641 15.9129L19.174 10.5451L11.0338 24.1035Z" fill="#262626"/>
+            <circle cx="21" cy="9" r="9" fill="#DC565B"/>
+            <path d="M23.306 5.536V4.636H19.106L18.314 9.052L19.19 9.1C19.39 8.86 19.618 8.668 19.874 8.524C20.138 8.372 20.438 8.296 20.774 8.296C21.062 8.296 21.322 8.344 21.554 8.44C21.794 8.536 21.998 8.672 22.166 8.848C22.334 9.016 22.462 9.22 22.55 9.46C22.646 9.692 22.694 9.948 22.694 10.228C22.694 10.564 22.646 10.86 22.55 11.116C22.454 11.364 22.322 11.572 22.154 11.74C21.994 11.908 21.802 12.036 21.578 12.124C21.362 12.204 21.134 12.244 20.894 12.244C20.638 12.244 20.402 12.208 20.186 12.136C19.978 12.056 19.794 11.948 19.634 11.812C19.482 11.668 19.358 11.504 19.262 11.32C19.174 11.128 19.122 10.924 19.106 10.708H18.086C18.094 11.092 18.17 11.436 18.314 11.74C18.458 12.044 18.654 12.3 18.902 12.508C19.15 12.708 19.434 12.864 19.754 12.976C20.082 13.08 20.43 13.132 20.798 13.132C21.294 13.132 21.726 13.056 22.094 12.904C22.47 12.744 22.782 12.532 23.03 12.268C23.278 12.004 23.462 11.704 23.582 11.368C23.71 11.024 23.774 10.672 23.774 10.312C23.774 9.824 23.702 9.4 23.558 9.04C23.414 8.672 23.218 8.368 22.97 8.128C22.722 7.88 22.43 7.696 22.094 7.576C21.758 7.456 21.402 7.396 21.026 7.396C20.738 7.396 20.446 7.448 20.15 7.552C19.862 7.648 19.626 7.8 19.442 8.008L19.418 7.984L19.874 5.536H23.306Z" fill="white"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M11 0C17.0851 0 22 4.91489 22 11C22 17.0851 17.0851 22 11 22C4.91489 22 0 17.0851 0 11C0 4.91489 4.91489 0 11 0ZM11 20.5957C16.2894 20.5957 20.5957 16.2894 20.5957 11C20.5957 5.71064 16.2894 1.40426 11 1.40426C5.71064 1.40426 1.40426 5.71064 1.40426 11C1.40426 16.2894 5.71064 20.5957 11 20.5957ZM8.94043 9.50213C9.08085 9.26808 9.26808 9.08085 9.50213 8.94043L16.4298 5.14894C16.5702 5.10213 16.7106 5.10213 16.8043 5.19574C16.8979 5.28936 16.9447 5.42979 16.8511 5.57021L13.0596 12.4979C12.9191 12.7319 12.7319 12.9191 12.4979 13.0596L5.57021 16.8511C5.42979 16.8979 5.28936 16.8979 5.19574 16.8043C5.10213 16.7106 5.05532 16.5702 5.14894 16.4298L8.94043 9.50213ZM11.8426 11.8426L13.8553 8.19149L10.2043 10.2043L11.8426 11.8426Z" fill="#262626"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="19" viewBox="0 0 22 19" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.8213 0C12.4979 0 11 2.4561 11 2.4561C11 2.4561 9.50213 0 6.17872 0C2.7617 0 0 2.96585 0 6.62683C0 10.2878 2.85532 12.3732 5.71064 14.8756C10.017 18.6756 10.2979 19 11 19C11.7021 19 11.983 18.6756 16.2894 14.8756C19.1915 12.3268 22 10.2415 22 6.62683C22 2.96585 19.2383 0 15.8213 0ZM15.3532 13.8098C12.8255 16.0341 11.4681 17.2854 11 17.5634C10.5319 17.239 8.84681 15.7561 6.64681 13.8098C4.07234 11.539 1.40426 9.63902 1.40426 6.58049C1.40426 3.70732 3.55745 1.3439 6.17872 1.3439C8.09787 1.3439 9.12766 2.27073 9.8766 3.29024C11.5617 5.65366 10.4383 5.65366 12.1234 3.29024C12.8723 2.27073 13.9021 1.3439 15.8213 1.3439C18.4426 1.3439 20.5957 3.70732 20.5957 6.58049C20.5957 9.68537 17.9277 11.5854 15.3532 13.8098Z" fill="#262626"/>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                        <circle cx="11" cy="11" r="11" fill="#4094EF"/>
+                        </svg>
+        </div>
+
+        <div class="burger-menu">
+            <img src="./Icons/burger-menu.svg" alt="burger-menu">
+        </div>
+
+        </div>
+    </div>
+
+    <hr class="line">
+   
+</header>
+
+<main>
+
+    <div class="container mt-4">
+    <div class="row">
+        <div class="offset-md-1 col-md-3">
+          <img src="./Icons/avatar.svg" alt="avatar" />
+        </div>
+        <div class="col-md-8">
+            <div class="container d-flex flex-row align-items-center pt-2 pb-4">
+              <h3 class="fw-bold me-4">name</h3>
+              <button type="button" class="btn btn-primary btn-follow col-md-2 me-3">
+                Follow
+              </button>
+              <button class="btn btn-primary dropdown-toggle btn-dropdown me-3"></button>
+             <img src="./Icons/dots.svg">
+            </div>
+
+        <div class="container">
+            <div class="data d-flex flex-row">
+                <p class="posts-info pe-5"><strong>79</strong> posts</p>
+                <p class="followers-info pe-5"><strong>379</strong> followers </p>
+                <p class="following-info pe-5"><strong>179</strong> following </p>
+            </div>
+            <h6 class="name"><b>Name</b></h6>
+            <p class="description col-md-7">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
+            <a href="bit.ly/35Ce3mX">bit.ly/35Ce3mX</a>
+        </div>
+        </div>
+
+    </div>
+    </div>
+
+
+    <div class="container-md col-12 d-flex justify-content-between mt-5">
+        <div class="row">
+            <div class="stories">
+            <div class=" d-flex flex-column align-items-center">
+                <img class="story" src="./Icons/history-img.svg" alt="story">
+                <p class="title">Name</p>
+            </div>
+            <div class=" d-flex flex-column align-items-center mt-6">
+                <img class="story" src="./Icons/history-img.svg" alt="story">
+                <p class="title">Name</p>
+            </div>
+            <div class=" d-flex flex-column align-items-center mt-6">
+                <img class="story" src="./Icons/history-img.svg" alt="story">
+                <p class="title">Name</p>
+            </div>
+        </div>
+        </div>
+    </div>
+
+
+<div class="container mt-5 border-top border-2 d-flex justify-content-center">
+    <div class="posts-tab d-flex flex-row pe-5 py-4">
+        <div class="post-img">
+            <img class="mb-2 me-2" src="icons/posts.svg" alt="posts">
+        </div>
+        <h6 class="h6 posts-title">POSTS</h6>
+    </div>
+    <div class="tags-tab d-flex flex-row pe-4 py-4 ">
+        <div class="ps-3 tagged-menu-pic">
+            <img class="mb-2 me-2" src="./Icons/tags.svg" alt="tags">
+        </div>
+        
+        <h6 class="h6 tags-title">TAGGED</h6>
+</div>
+</div>
+
+
+
+    <div class=" container-md col-md-12 d-flex flex-row pb-4 justify-content-center">
+        <div class="col-md-4 d-flex justify-content-center">
+            <img class="post" src="./Icons/post.svg" alt="post">
+        </div>
+        <div class="col-md-4 d-flex justify-content-center">
+            <img class="post" src="./Icons/post.svg" alt="post">
+        </div>
+        <div class="col-md-4 d-flex justify-content-center">
+            <img class="post" src="./Icons/post.svg" alt="post">
+        </div>
+    </div>
+
+    <div class="container-md d-flex flex-row pb-4 justify-content-center">
+        <div class="col-md-4 d-flex justify-content-center">
+            <img class="post" src="./Icons/post.svg" alt="post">
+        </div>
+        <div class="col-md-4 d-flex justify-content-center">
+            <img class="post" src="./Icons/post.svg" alt="post">
+        </div>
+        <div class="col-md-4 d-flex justify-content-center">
+            <img class="post" src="./Icons/post.svg" alt="post">
+        </div>
+    </div>
+    </div>
+
+    <div class="container-md d-flex flex-row pb-4 justify-content-center">
+        <div class="col-md-4 d-flex justify-content-center">
+            <img class="post" src="./Icons/post.svg" alt="post">
+        </div>
+        <div class="col-md-4 d-flex justify-content-center">
+            <img class="post" src="./Icons/post.svg" alt="post">
+        </div>
+        <div class="col-md-4 d-flex justify-content-center">
+            <img class="post" src="./Icons/post.svg" alt="post">
+        </div>
+    </div>
+   
+    
+
+
+
+
+
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>
