@@ -1,0 +1,639 @@
+$primaryColor: #111B47;
+$secondaryColor: #505F98;
+$navColor: #505F98;
+$backgroundColor: #ffffff;
+$footerColor: #E7ECFF;
+
+
+@mixin primarybtn {
+padding: 5px 39px;
+gap: 10px;
+background: #111B47;
+border-radius: 2px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 26px;
+text-align: center;
+color: $backgroundColor;
+border-radius: 2px;
+}
+
+
+@mixin secondarybtn {
+padding: 2px 53px;
+gap: 10px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 26px;
+text-align: center;
+color: $primaryColor;
+border-color: $primaryColor;
+border-radius: 2px;
+border-color: #111B47;
+border-style: solid;
+
+}
+    
+
+@mixin primarybtn_small {
+padding: 5px 39px;
+gap: 10px;
+background: #111B47;
+border-radius: 2px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 18px;
+text-align: center;
+color: $backgroundColor;
+border-radius: 2px;
+}
+        
+
+@mixin h1 {
+font-family: 'Roboto';
+font-style: normal;
+font-size: 50px;
+line-height: 66px;
+letter-spacing: 1px;
+margin: 0;
+padding: 0;
+} 
+
+
+@mixin h2 {
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 36px;
+line-height: 48px;
+margin: 0;
+padding: 0;
+} 
+
+
+@mixin h3 {
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 26px;
+margin: 0;
+padding: 0;
+} 
+
+
+@mixin maintext {
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 200;
+font-size: 16px;
+line-height: 26px;
+margin: 0;
+padding: 0;
+} 
+    
+
+@mixin smalltext {
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 18px;
+margin: 0;
+padding: 0;
+} 
+
+
+@mixin navtext {
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 24px;
+margin: 0;
+padding: 0;
+} 
+    
+*,
+*::before,
+*::after {
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+
+body {
+background-color: $backgroundColor;
+width: 100%;
+height: 100%;
+}
+    
+    
+.hero-img {
+position: absolute;
+top: -15%;
+right: -105%;
+height: 160%;
+z-index: 0;
+background-size: auto;
+}
+
+
+.wrapper {
+min-height: 100%;
+overflow: hidden;
+display: flex;
+flex-direction: column;
+}
+
+
+
+/*-----------Header----------------------*/  
+
+
+.burger-menu {
+display: none;
+}
+
+
+.logo {
+z-index: 10;
+}
+
+
+.menu ul {
+display: flex;
+flex-direction: row;
+padding: 0px;
+gap: 40%;
+list-style-type: none;
+}
+
+
+ul {
+    @include navtext;
+color: $navColor;
+}
+
+
+li {
+z-index: 10;
+width: 100%;
+}
+
+
+.header {
+width: 100%;
+position: relative;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 30%;
+z-index: 50;
+margin: 10px 0px
+}
+
+
+
+.cta-btn {
+@include primarybtn_small; 
+z-index: 50;
+}
+
+
+/*-----------Hero-content----------------------*/ 
+
+
+.hero-content {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 69px;
+z-index: 5;
+padding-left: 8%;
+padding-top: 10%;
+z-index: 10;
+width: 50%;
+position: relative;
+}
+
+
+.hero-content p {
+@include maintext;
+color: $secondaryColor;
+z-index: 10;
+position: relative;
+}
+
+
+.hero-content h1 {
+width: 90%;
+z-index: 10;
+position: relative;
+}
+
+
+h1 {
+@include h1; 
+margin: 0; 
+color: $primaryColor;
+position: relative;
+
+}
+
+
+.description {
+width: 100%;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 20px;
+z-index: 10;
+position: relative;
+}
+
+
+.description p {
+    width: 80%;
+}
+
+
+
+.primarybtn {
+    @include primarybtn;
+}
+
+.secondarybtn {
+    @include secondarybtn;
+}
+
+
+.buttons {
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 50px;
+z-index: 10;
+}
+
+
+
+/*-----------First section----------------------*/ 
+
+
+.first_description {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 16px;
+flex-wrap: wrap;
+position: relative;
+
+}
+
+
+
+.first_description p {
+@include maintext;
+color: $secondaryColor;
+width: 80%;
+}
+
+
+.additional_description {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 10px ; 
+flex-wrap: wrap;
+}
+
+
+h2 {
+@include h2;
+color: $primaryColor;
+position: relative;
+}
+
+
+h3 {
+@include h3;
+color: $primaryColor;
+flex-wrap: wrap;
+}
+
+
+.additional_description p {
+@include smalltext;
+margin: 0;
+padding: 0;
+width: 255px;
+flex-wrap: wrap;
+}
+
+
+.additional {
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 30px;
+}
+
+
+.about {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px 16px;
+gap: 80px;
+width: 50%;
+}
+
+
+.first-section {
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+padding-left: 50px;
+margin: 230px 0px;
+gap: 10px;
+width: 100%;
+}
+
+
+
+/*-----------Second/Third/Fourth sections----------------------*/ 
+
+
+.second-section {
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+padding: 0px;
+gap: 50px;
+margin-bottom: 200px;
+}
+
+
+
+.third-section {
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+padding: 0px;
+gap: 100px;
+margin-bottom: 200px;
+}
+
+
+
+.second_description {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 16px;
+flex-wrap: wrap;
+position: relative;
+width: 30%
+
+}
+
+
+.second_description p {
+@include maintext;
+color: $secondaryColor;
+width: 100%;
+}
+
+
+.third_description {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 16px;
+flex-wrap: wrap;
+position: relative;
+width: 30%
+    }
+    
+    
+.third_description p {
+@include maintext;
+color: $secondaryColor;
+width: 100%;
+}
+    
+
+.fourth_description {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 16px;
+flex-wrap: wrap;
+position: relative;
+width: 100%
+}
+        
+        
+.fourth_description p {
+@include maintext;
+color: $secondaryColor;
+width: 100%;
+}
+       
+
+.fourth-section-content {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 40px;
+width: 30%;
+}
+
+
+.fourth-section {
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+padding: 0px;
+gap: 100px;
+}
+
+
+
+/*-----------Price sections----------------------*/ 
+
+
+.price-section {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+padding: 0px;
+gap: 60px;
+background-image: url(./icons/background-shape\ \(2\).svg);
+background-size: cover;
+background-repeat: no-repeat;
+height: 938px;
+width: 100%;
+}
+
+
+.price_description {
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+gap: 16px;
+width: 600px;
+width: 30%;
+text-align: center
+}
+
+.price_description p {
+@include maintext;
+text-align: center;
+color: $secondaryColor;
+width: 100%;
+}
+
+.price {
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+gap: 11px;
+}
+
+
+.price p {
+@include maintext;
+color: $secondaryColor;
+width: 100%;
+    }
+
+
+.price h2 {
+font-size: 50px
+    }
+
+
+.purchase {
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+gap: 9px;
+}
+
+.purchase p {
+@include navtext;
+color: $secondaryColor;
+}
+
+.purchase a {
+@include primarybtn_small;
+}
+
+
+  
+/*-----------Footer----------------------*/ 
+
+
+.footer {
+position: relative;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+gap: 30px;
+padding-top: 60px;
+padding-bottom: 30px;
+background-color: $footerColor;
+}
+
+
+.menu-footer ul {
+display: flex;
+flex-direction: row;
+padding: 0px;
+gap: 40%;
+list-style-type: none;
+width: 100%;    
+}
+
+nav {
+    display: flex;
+    gap: 10%;
+}
+
+nav ul {
+    display: flex;
+    flex-flow: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20%;
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: $navColor;
+}
+
+.top-part {
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 30%;
+width: 100%;
+}
+
+.bottom-part {
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+padding: 0px;
+gap: 61%;
+width: 100%;
+}
+
+.social-media {
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 30px;
+}
+
+hr {
+background-color:rgba(205, 209, 212, 1);
+border: 1 solid;
+width: 80%;
+}
