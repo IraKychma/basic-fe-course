@@ -1,0 +1,145 @@
+.wrapper { 
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+    align-items: center;
+}
+
+#burger-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    height: 200px;
+    cursor: pointer;
+    background-color: #000000;
+    justify-content: center;
+}
+
+.line {
+    height: 6px;
+    background-color: #000000;
+    width: 15px;
+    margin-left: 15px;
+}
+
+.sword_first {
+    background: #333233;
+    height: 6px;
+    margin-bottom: 15px;
+    width: 120px;
+}
+
+.sword_second {
+    background: #333233;
+    height: 6px;
+    margin-bottom: 15px;
+    width: 120px;
+}
+
+.sword_third {
+    background: #333233;
+    height: 6px;
+    margin-bottom: 15px;
+    width: 120px;
+}
+
+#burger-menu:hover>.sword_first {
+    animation-name: sword-first;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes sword-first {
+    100% {
+        opacity: 0;;
+    }
+}
+
+
+#burger-menu:hover>.sword_second {
+    box-shadow: 5px 0px 15px 1px rgb(255, 83, 83);
+    transform: rotate(-130deg);
+    background-color: rgb(255, 197, 197); 
+    margin-bottom: -5px;
+}
+
+#burger-menu:hover>.sword_third {
+    box-shadow: 5px 0px 15px 1px rgb(117, 255, 170);
+    transform: rotate(-50deg);
+    background-color: rgb(194, 255, 217);
+    margin-bottom: 5px;
+}
+
+.sword_second,
+.sword_third {
+    transition-duration: 1.5s;
+}
+
+
+
+/*-----------Newton cradle----------------------*/
+
+
+.newton_cradle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ball {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    transform-origin: 50% -100px;
+    background: rgb(85, 85, 85);
+    border-radius: 100%;
+}
+
+.ball:before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 10px;
+    box-shadow: rgba(139, 139, 139, 0.2) 0px 100px 4px 0px;
+    border-radius: 50%;
+}
+
+.ball:nth-child(1) {
+    background: rgb(48, 79, 106);
+}
+
+.ball:nth-child(2) {
+    background: linear-gradient(228.66deg, rgb(71, 72, 91) -29.13%, rgb(48, 79, 106) 120.29%);
+}
+
+.ball:nth-child(3) {
+    background: linear-gradient(228.66deg, rgb(92, 67, 80) -29.13%, rgb(61, 73, 99) 120.29%);
+}
+
+.ball:nth-child(4) {
+    background: linear-gradient(228.66deg, rgb(132, 61, 65) -29.13%, rgb(82, 69, 86) 120.29%);
+}
+
+.ball:nth-child(5) {
+    background: linear-gradient(228.66deg, rgb(165, 56, 51) -29.13%, rgb(134, 61, 64) 120.29%);
+}
+
+.ball:nth-child(6) {
+    background: linear-gradient(228.66deg, rgb(203, 50, 36) -29.13%, rgb(174, 56, 49) 120.29%);
+}
+
+.ball:nth-child(7) {
+    background: rgb(211, 52, 35);
+}
+
+.ball:nth-child(1) {
+    animation: 0.5s ease-out 0.5s infinite alternate none running ball1;
+}
+
+.ball:nth-child(7) {
+    animation : ball7 0.5s ease-out 0s infinite alternate none running;
+}
+
+@keyframes ball1 {0%,50% {transform: rotate(0);} 100% {transform: rotate(30deg);}}
+@keyframes ball7 {0%,50% {transform: rotate(0);} 100% {transform: rotate(-30deg);}}
